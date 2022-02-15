@@ -13,7 +13,7 @@ const Auth = ({ authRoute }) => {
     } = useContext(AuthContext);
 
     let body;
-    if (!authLoading) {
+    if (authLoading) {
         body = (
             <>
                 <Spinner
