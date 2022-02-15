@@ -1,7 +1,7 @@
 export const apiUrl =
     process.env.NODE_ENV !== 'production'
         ? 'http://localhost:5000/api'
-        : 'someUrlDeploy';
+        : 'https://hidden-fjord-03232.herokuapp.com/api';
 export const LOCAL_STORAGE_TOKEN_NAME = 'mern-learnit';
 
 export const ADD_POST = 'ADD_POST';
