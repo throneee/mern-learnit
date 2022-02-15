@@ -89,7 +89,7 @@ const Register = () => {
                         value={confirmPassword}
                         onChange={onChangeRegister}></Form.Control>
                 </Form.Group>
-                <Button type='submit' variant='success'>
+                <Button type='submit' variant='success' className='auth__btn'>
                     Register
                 </Button>
             </Form>

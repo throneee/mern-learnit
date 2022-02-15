@@ -16,7 +16,8 @@ const SinglePost = ({ post: { _id, title, description, url, status } }) => {
                     : status === 'LEARNING'
                     ? 'warning'
                     : 'danger'
-            }>
+            }
+            className='border-2'>
             <Card.Body>
                 <Card.Title>
                     <Row>

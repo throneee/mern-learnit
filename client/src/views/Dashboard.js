@@ -40,12 +40,12 @@ const Dashboard = () => {
 
     if (postLoading) {
         body = (
-            <>
+            <div className='text-center'>
                 <Spinner
                     animation='border'
                     variant='info'
                     className='my-5'></Spinner>
-            </>
+            </div>
         );
     } else if (posts.length === 0) {
         body = (
@@ -71,7 +71,7 @@ const Dashboard = () => {
     } else {
         body = (
             <>
-                <Row className='row-cols-1 row-cols-md-3 g-4 mx-auto mt-3'>
+                <Row className='row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mx-auto my-3'>
                     {posts.map((post) => {
                         return (
                             <Col key={post._id} className='my-2'>

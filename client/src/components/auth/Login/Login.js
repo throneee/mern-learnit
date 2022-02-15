@@ -70,7 +70,7 @@ const Login = () => {
                         value={password}
                         onChange={onChangeLogin}></Form.Control>
                 </Form.Group>
-                <Button type='submit' variant='success'>
+                <Button type='submit' variant='success' className='auth__btn'>
                     Login
                 </Button>
             </Form>

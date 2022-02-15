@@ -32,6 +32,10 @@
     text-align: center;
 }
 
+.auth__btn {
+    min-width: 20%;
+}
+
 .button__switch {
     margin-left: 10px;
 }
@@ -57,4 +61,57 @@
     right: 3rem;
     bottom: 3rem;
     border: none !important;
+}
+
+/* 5. About */
+.about__btn {
+    min-width: 50%;
+    background-color: #663dff;
+    background-image: linear-gradient(
+        319deg,
+        #663dff 0%,
+        #aa00ff 37%,
+        #cc4499 100%
+    );
+    border-color: unset !important;
+    padding: 10px !important;
+    margin-top: 10px;
+}
+
+.about__btn:hover {
+    opacity: 0.8;
+}
+
+.about__btn > span {
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+/* 6. Mobile Responsive */
+@media (max-width: 768px) {
+    .auth__form {
+        min-width: 90vw;
+    }
+
+    .auth__body {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .auth__btn {
+        width: 100%;
+    }
+
+    .navbar__logout-mobile {
+        flex-direction: unset !important;
+        justify-content: space-between !important;
+    }
+}
+
+/* 7. Tablet Responsive */
+@media (max-width: 1200px) {
+    .navbar__logout-mobile {
+        flex-direction: unset !important;
+        justify-content: space-between !important;
+    }
 }

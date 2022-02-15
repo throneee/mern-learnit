@@ -42,9 +42,9 @@ const NavbarMenu = () => {
                     </Nav.Link>
                 </Nav>
 
-                <Nav>
+                <Nav className='navbar__logout-mobile'>
                     <Nav.Link className='text-white' disabled>
-                        Welcome {username}
+                        Welcome {username}!
                     </Nav.Link>
                     <Button
                         variant='danger'
