@@ -1,0 +1,48 @@
+POST http://localhost:5000/api/auth/register
+Content-type: application/json
+
+{
+    "username": "myy",
+    "password": "myy"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-type: application/json
+
+{
+    "username": "admin",
+    "password": "admin"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjAwZDJiYTNlM2RhNDU4MjE5YzM1YjUiLCJpYXQiOjE2NDQ0NjUxODN9.QOEhI9f2HcQI55_I9x0OOUZWooA7KqasT4nOQsz2CCs
+
+{
+    "title": "post 4 of luongvipfifa",
+    "description": "1054",
+    "url": "google.com",
+    "status": "LEARNED"
+}
+
+###
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjAzNzk3NDcxMWE4MTZhN2I0ZGFhNmIiLCJpYXQiOjE2NDQ4NDM3MDh9.KkMVmFhpIB2uk8hnPiA_y-BZPSXnxtJircJASQ82FTI
+
+###
+PUT http://localhost:5000/api/posts/620a4e385703f33931791832
+Content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjAzNzk3NDcxMWE4MTZhN2I0ZGFhNmIiLCJpYXQiOjE2NDQ4NDM3MDh9.KkMVmFhpIB2uk8hnPiA_y-BZPSXnxtJircJASQ82FTI
+
+{
+    "title": "ReactJS",
+    "description": "React JS for beginer",
+    "url": "reactjs.org",
+    "status": "LEARNED"
+}
+
+###
+DELETE http://localhost:5000/api/posts/620a1bfc208726a0c06388a7
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjAzNzk3NDcxMWE4MTZhN2I0ZGFhNmIiLCJpYXQiOjE2NDQ4Mjk4MzJ9.qOxTSXnuW1WYOcTdgLMSuiMbWl5hheT7lnTLw44GLc4
