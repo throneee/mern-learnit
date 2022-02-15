@@ -13,13 +13,13 @@ const Auth = ({ authRoute }) => {
     } = useContext(AuthContext);
 
     let body;
-    if (authLoading) {
+    if (!authLoading) {
         body = (
             <>
                 <Spinner
                     animation='border'
                     variant='info'
-                    className='my-5'></Spinner>
+                    className='mb-5'></Spinner>
             </>
         );
     } else if (isAuthenticated) {
